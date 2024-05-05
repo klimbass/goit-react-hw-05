@@ -1,0 +1,20 @@
+.castItem {
+  border: 2px solid rgb(155, 150, 150);
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  max-width: 150px;
+}
+
+.castImg {
+  width: 150px;
+}
+
+.title {
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.character {
+  color: rgb(120, 116, 116);
+}

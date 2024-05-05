@@ -1,0 +1,19 @@
+.list {
+  font-size: 18px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.item {
+  border: 1px solid rgba(0, 0, 0, 0.234);
+  border-radius: 8px;
+  margin: 24px;
+  padding: 8px 30px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.319);
+}
+.title {
+  display: inline-block;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.338);
+  margin: 14px;
+}

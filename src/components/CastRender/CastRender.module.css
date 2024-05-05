@@ -1,0 +1,17 @@
+.castList {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.button {
+  display: inline-block;
+  max-height: 50px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: auto 4px 0px;
+}
+.button:hover {
+  background-color: rgba(42, 58, 165, 0.381);
+}

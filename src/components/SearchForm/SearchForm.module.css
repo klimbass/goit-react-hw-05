@@ -1,0 +1,36 @@
+.form {
+  margin-top: 20px;
+  margin-bottom: 16px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
+  padding: 8px 16px;
+  outline: none;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  min-width: 300px;
+  font-family: sans-serif;
+  font-size: 18px;
+  box-shadow: -1px 0px 4px black;
+}
+
+.button {
+  padding: 4px 24px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #fafafa;
+  box-shadow: 1px 0px 4px black;
+  transition: background-color 250ms linear;
+}
+.button:hover,
+.button:focus {
+  background-color: rgba(0, 128, 128, 0.483);
+}
+.button:active {
+  background-color: rgba(0, 128, 128, 0.759);
+}
