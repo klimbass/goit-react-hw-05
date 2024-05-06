@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getTrendingDay } from "../../fetchRequest";
 import Loader from "../../components/Loader/Loader";
-import RenderMoviesList from "../../components/RenderMoviesList/RenderMoviesList";
+import MovieList from "../../components/MovieList/MovieList";
 
 export default function HomePage() {
   const [loading, setLoading] = useState(false);
@@ -27,7 +27,7 @@ export default function HomePage() {
       <h2>Trending today:</h2>
       {loading && <Loader />}
       {error && <h2>Something went wrong</h2>}
-      {trendList.length > 0 && <RenderMoviesList moviesList={trendList} />}
+      {trendList.length > 0 && <MovieList movieList={trendList} />}
     </div>
   );
 }

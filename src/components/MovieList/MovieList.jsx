@@ -1,11 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
-import css from "./RenderMoviesList.module.css";
+import css from "./MovieList.module.css";
 
-export default function RenderMoviesList({ moviesList }) {
+export default function MovieList({ movieList }) {
   const location = useLocation();
   return (
     <ul className={css.list}>
-      {moviesList.map((item) => {
+      {movieList.map((item) => {
         return (
           <li key={item.id}>
             <Link

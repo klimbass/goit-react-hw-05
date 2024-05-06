@@ -3,7 +3,7 @@ import SearchForm from "../../components/SearchForm/SearchForm";
 import { getSearchMovie } from "../../fetchRequest";
 import Loader from "../../components/Loader/Loader";
 import { useSearchParams } from "react-router-dom";
-import RenderMoviesList from "../../components/RenderMoviesList/RenderMoviesList";
+import MovieList from "../../components/MovieList/MovieList";
 
 export default function MoviePage() {
   const [loading, setLoading] = useState(false);
@@ -32,9 +32,7 @@ export default function MoviePage() {
       <SearchForm setUserQuery={setUserQuery} />
       {loading && <Loader />}
       {error && <p>Something went wrong...</p>}
-      {dataResponse.length > 0 && (
-        <RenderMoviesList moviesList={dataResponse} />
-      )}
+      {dataResponse.length > 0 && <MovieList movieList={dataResponse} />}
     </div>
   );
 }
